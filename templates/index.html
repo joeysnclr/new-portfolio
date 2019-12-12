@@ -1,0 +1,89 @@
+{% extends 'layout.html' %}
+{% block body %}
+{% include 'includes/nav.html' %}
+<div class="hero">
+	<div>
+		<h1>JOSEPH SINCLAIR</h1>
+		<!-- <img class="underline" src="./static/images/underline.svg" alt=""> -->
+		<h3>Web Developer</h3>
+	</div>
+	<a href="#content" class="scroll-down hvr-bob">
+		<i class="fas fa-chevron-down"></i>
+	</a>
+</div>
+<div id="content">
+	<div class="row no-gutters">
+		<div class="col-12 col-md-6 section primary">
+			<div>
+				<h2>Hi, I'm Joseph Sinclair</h2>
+				<h2 class="less">Web Developer</h2>
+				<h2 class="less">San Mateo, California</h2>
+				
+			</div>
+		</div>
+		<div class="col-12 col-md-6 section grey">
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus reprehenderit incidunt, alias, consectetur aliquid rerum minima numquam laudantium laborum porro non. Sint veniam enim incidunt in, iure a dolorem.</p>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 icon-section">
+			<i class="far fa-gem"></i>
+			<h3>Quality Products</h3>
+		</div>
+		<div class="col-12 col-md-4 icon-section">
+			<i class="fas fa-magic"></i>
+			<h3>Designed to Perfection</h3>
+		</div>
+		<div class="col-12 col-md-4 icon-section">
+			<i class="far fa-heart"></i>
+			<h3>Made With Love</h3>
+		</div>
+		<div class="col-12 section primary" id="projects">
+			<h1>Projects</h1>
+		</div>
+
+		{% for p in projects %}
+		<a href="/project/{{p}}" class="col-12 col-md-6 project-display" style="background-image: url('/static/images/{{p}}.jpg')">
+			<div class="project-info">
+				<h2>{{projects[p]["name"]}}</h2>
+				<p>{{projects[p]["desc"]}}</p>
+			</div>
+		</a>
+		{% endfor %}
+	</div>
+	<div class="row no-gutters">
+
+
+		<div class="col-12 col-md-4 section process-section">
+			<div>
+				<h2><span class="color-num">01. </span>Research</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium optio vero aliquam fugit repudiandae nobis porro, amet et voluptatum. Dolorum laborum, asperiores sapiente quibusdam velit eaque sed consequuntur, cumque vero?</p>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 section process-section">
+			<div>
+				<h2><span class="color-num">02. </span>Design</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium optio vero aliquam fugit repudiandae nobis porro, amet et voluptatum. Dolorum laborum, asperiores sapiente quibusdam velit eaque sed consequuntur, cumque vero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam similique facilis adipisci reiciendis tenetur quibusdam obcaecati sint rem, beatae illo id vitae nulla soluta ex aliquam odio, inventore error!</p>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 section process-section">
+			<div>
+				<h2><span class="color-num">03. </span>Develop</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium optio vero aliquam fugit repudiandae nobis porro, amet et voluptatum. Dolorum laborum, asperiores sapiente quibusdam velit eaque sed consequuntur, cumque vero?</p>
+			</div>
+		</div>
+
+		<div class="col-12 section primary contact">
+			<p>Like what you see?</p>
+			<a href="/contact"><h1>Contact Me!</h1></a>
+		</div>
+
+
+
+
+
+
+	</div>
+</div>
+
+{% endblock %}
