@@ -32,4 +32,4 @@ def project(projectId):
 	return render_template('project.html', pId=projectId, p=p)
 
 
-app.run(host='0.0.0.0', port=port,)
+app.run(host='0.0.0.0', port=port)
