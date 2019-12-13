@@ -31,4 +31,4 @@ def project(projectId):
 	return render_template('project.html', pId=projectId, p=p)
 
 
-app.run(port=5000)
+app.run()
