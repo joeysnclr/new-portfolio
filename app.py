@@ -3,6 +3,7 @@ import json, os
 import tools, text
 
 app = Flask(__name__)
+port = int(os.environ.get('PORT', 5000))
 
 @app.route('/')
 def index():
@@ -31,4 +32,4 @@ def project(projectId):
 	return render_template('project.html', pId=projectId, p=p)
 
 
-app.run()
+app.run(host='0.0.0.0', port=port,)
