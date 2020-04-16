@@ -10,19 +10,6 @@ def index():
 
 	return render_template('index.html', projects=tools.getProjects())
 
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-	response = ""
-	if request.method == 'POST':
-		name = request.form.get('name')
-		email = request.form.get('email')
-		subject = request.form.get('subject')
-		message = request.form.get('message')
-		textBody = "\n" + name + "\n" + email + "\n" + subject + "\n" + message
-		sms = text.Messenger("+12406677357", "+16507593486")
-		sms.sendMessage(textBody)
-		response = "Message sent!"
-	return render_template('contact.html', response=response)
 
 @app.route('/project/<string:projectId>')
 def project(projectId):
