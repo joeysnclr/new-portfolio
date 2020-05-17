@@ -1,81 +1,59 @@
 {% extends 'layout.html' %}
 {% block body %}
-{% include 'includes/nav.html' %}
-<div class="hero">
-	<div>
-		<h1>JOSEPH SINCLAIR</h1>
-		<!-- <img class="underline" src="./static/images/underline.svg" alt=""> -->
-		<h3>Software Engineer</h3>
+
+<div class="main d-flex text-white">
+	<div class="navigation">
+		<div class="navigation-mobile bg-darker px-5 d-flex d-lg-none justify-content-between align-items-center">
+			<p>Joseph Sinclair</p>
+			<a onclick="toggleMobileNav()"><i class="fas fa-bars"></i></a>
+		</div>
+		<div class="navigation-menu bg-darker px-5 py-0 py-lg-5">
+			<div class="tree">
+				<div class="tree-group">
+					<a class="root" href="#title">Joseph Sinclair</a>
+					<div class="tree-group item">
+						<a class="root" href="#info">Info</a>
+						<a class="item" href="#about">About</a>
+						<a class="item" href="#skills">Skills</a>
+					</div>
+					<div class="tree-group item">
+						<a class="root" href="#projects">Projects</a>
+						<a class="item" href="">Compound Invest</a>
+						<a class="item" href="">Expense Tracker</a>
+						<a class="item" href="">Baseball Simulator</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<a href="#content" class="scroll-down hvr-bob">
-		<i class="fas fa-chevron-down"></i>
-	</a>
-</div>
-<div id="content">
-	<div class="row no-gutters">
-		<div class="col-12 col-md-6 section primary">
-			<div>
-				<h2>Hi, I'm Joseph Sinclair</h2>
-				<h2 class="less">Software Engineer</h2>
-				<h2 class="less">San Mateo, California</h2>
-				
+	<div class="content bg-dark">
+		<div id="title" class="px-5 pt-5">
+			<h1 class="text-primary">Joseph Sinclair</h1>
+			<p class="text-muted font-secondary pt-1">Software Engineer</p>
+		</div>
+		<div id="info" class="px-5 pt-5">
+			<h2 class="text-primary">Info</h2>
+			<div id="about" class="py-3">
+				<h3 class="text-secondary">About Me</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, saepe! Quibusdam aliquid
+					blanditiis perferendis atque autem suscipit, nihil tempore minima illo rem officia aliquam
+					recusandae neque quaerat. Aliquid, expedita voluptate.</p>
+			</div>
+			<div id="skills" class="py-3">
+				<h3 class="text-secondary">Skills</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, saepe! Quibusdam aliquid
+					blanditiis perferendis atque autem suscipit, nihil tempore minima illo rem officia aliquam
+					recusandae neque quaerat. Aliquid, expedita voluptate.</p>
 			</div>
 		</div>
-		<div class="col-12 col-md-6 section grey">
-			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus reprehenderit incidunt, alias, consectetur aliquid rerum minima numquam laudantium laborum porro non. Sint veniam enim incidunt in, iure a dolorem.</p>
-			</div>
+		<div id="projects" class="px-5 pt-5">
+			<h2 class="text-primary">Projects</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, saepe! Quibusdam aliquid
+				blanditiis perferendis atque autem suscipit, nihil tempore minima illo rem officia aliquam
+				recusandae neque quaerat. Aliquid, expedita voluptate.</p>
 		</div>
-		<div class="col-12 col-md-4 icon-section">
-			<i class="far fa-gem"></i>
-			<h3>Quality Products</h3>
-		</div>
-		<div class="col-12 col-md-4 icon-section">
-			<i class="fas fa-magic"></i>
-			<h3>Designed to Perfection</h3>
-		</div>
-		<div class="col-12 col-md-4 icon-section">
-			<i class="far fa-heart"></i>
-			<h3>Made With Love</h3>
-		</div>
-		<div class="col-12 section primary" id="projects">
-			<h1>Projects</h1>
-		</div>
-
-		{% for p in projects %}
-		<a href="/project/{{p}}" class="col-12 col-md-6 project-display" style="background-image: url('/static/images/{{p}}.png')">
-			<div class="project-info">
-				<h2>{{projects[p]["name"]}}</h2>
-				<p>{{projects[p]["desc"]}}</p>
-			</div>
-		</a>
-		{% endfor %}
-	</div>
-	<div class="row no-gutters">
-
-
-		<div class="col-12 col-md-4 section process-section">
-			<div>
-				<h2><span class="color-num">01. </span>Research</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium optio vero aliquam fugit repudiandae nobis porro, amet et voluptatum. Dolorum laborum, asperiores sapiente quibusdam velit eaque sed consequuntur, cumque vero?</p>
-			</div>
-		</div>
-		<div class="col-12 col-md-4 section process-section">
-			<div>
-				<h2><span class="color-num">02. </span>Design</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium optio vero aliquam fugit repudiandae nobis porro, amet et voluptatum. Dolorum laborum, asperiores sapiente quibusdam velit eaque sed consequuntur, cumque vero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ipsam similique facilis adipisci reiciendis tenetur quibusdam obcaecati sint rem, beatae illo id vitae nulla soluta ex aliquam odio, inventore error!</p>
-			</div>
-		</div>
-		<div class="col-12 col-md-4 section process-section">
-			<div>
-				<h2><span class="color-num">03. </span>Develop</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium optio vero aliquam fugit repudiandae nobis porro, amet et voluptatum. Dolorum laborum, asperiores sapiente quibusdam velit eaque sed consequuntur, cumque vero?</p>
-			</div>
-		</div>
-
-
-
 	</div>
 </div>
+
 
 {% endblock %}
