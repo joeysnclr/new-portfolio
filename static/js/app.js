@@ -1,3 +1,3 @@
 function toggleMobileNav() {
-    $(".navigation-menu").toggle();
+    $(".navigation-section").toggle();
 }
