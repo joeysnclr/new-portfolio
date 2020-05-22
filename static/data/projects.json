@@ -1,13 +1,37 @@
-{
-	"compound-invest": {
+[{
+		"id": "compound-invest",
 		"name": "Compound Invest",
-		"desc": "A multi variable compound interest calculator designed to increase the users financial literacy.",
-		"overview": "Compound Invest is a website by me from scratch. This project took me about 7 days to complete or about 20 hours. I learned exactly what goes into calculating compound interest for investments. Working on this project gave me good experience with using Javascript with user interaction.",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem veniam ab incidunt a. Officia mollitia nulla ab ut velit quaerat ad laborum quo beatae ipsum!",
 		"link": "https://compound-invest.herokuapp.com/",
 		"github": "https://github.com/joeysnclr/Compound-Invest",
-		"research": "Before starting the designing/coding portion of this project, I did some messing around with other compound interest calculators online. From this, I gained a solid understanding of what to do, and what not to do when creating my project. In addition, I researched compound interest formulas to see if there was one that had all the variables I needed. Sadly there wasn’t, so I had to get creative.",
-		"design": "When desiging this website, I originally planned on having 2 pages. One for the home page that gave some basic information, and one for the calculator. I did this in my first design with a dark grey/green color scheme that I though went well with the theme of investing and money. After further review, I decided to scratch the idea of having a home page and only make a page for the calculator. With this decision, I also changed to a white/blue color scheme.",
-		"develop": "After spending lots of time researching compound interest formulas, I had come to the conclusion that I had to code it myself so that I could include all the variables I wanted. This resulted in the calculations being slightly off compared to other compound interest calculators. However, it still gets the job done and I had the chance to include all the features I wanted. When coding the calculator, I used the very convenient Javascript library, JQuery. In addition, I learned how to use Chart.js for the graph visual.",
-		"tech": "I built this project using Python and the awesome Flask library for the backend. For visuals and page outline I used HTML and CSS, and for frontend logic I used Javascript paired with JQuery and Chart.js"
+		"stack": ["Python", "Flask", "Chart.js"],
+		"tag": "Web Application"
+	},
+	{
+		"id": "expense-tracker",
+		"name": "Expense Tracker",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem veniam ab incidunt a. Officia mollitia nulla ab ut velit quaerat ad laborum quo beatae ipsum!",
+		"link": "https://gentle-sea-83480.herokuapp.com/",
+		"github": "https://github.com/joeysnclr/expense-tracker",
+		"stack": [
+			"Python",
+			"Flask",
+			"MongoDB",
+			"Bootstrap",
+			"Chart.js"
+		],
+		"tag": "Web Application"
+	},
+	{
+		"id": "baseball-sim",
+		"name": "Baseball Simulator",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem veniam ab incidunt a. Officia mollitia nulla ab ut velit quaerat ad laborum quo beatae ipsum!",
+		"link": null,
+		"github": "https://github.com/joeysnclr/expense-tracker",
+		"stack": [
+			"Python",
+			"MLB-Stats API"
+		],
+		"tag": "Program"
 	}
-}
+]

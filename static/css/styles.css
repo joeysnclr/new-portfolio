@@ -134,6 +134,32 @@ span.number {
   padding: 5vh 0;
 }
 
+.project {
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.project .project-info h2 {
+  font-weight: 700;
+}
+
+.project .project-info hr {
+  background-color: #F97583;
+  height: 2px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.project .project-info i {
+  font-size: 24px;
+}
+
+.project .proj-img-container img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media only screen and (max-width: 991px) {
   .main {
     -webkit-box-orient: vertical;
@@ -162,6 +188,13 @@ span.number {
   .content {
     width: 100%;
     height: calc(100vh - 80px);
+  }
+  .project {
+    width: 100%;
+    height: auto;
+  }
+  .project .row {
+    height: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

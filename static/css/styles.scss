@@ -158,6 +158,42 @@ span.number {
 	}
 }
 
+// projects
+.projects {}
+
+.project {
+	max-width: 800px;
+	border-radius: 10px;
+
+	.project-info {
+
+
+		h2 {
+			font-weight: 700;
+		}
+
+		hr {
+			background-color: $primary;
+			height: 2px;
+			margin-top: 8px;
+			margin-bottom: 20px;
+		}
+
+		i {
+			font-size: 24px;
+		}
+
+	}
+
+
+	.proj-img-container {
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
 
 
 // RESPONSIVE
@@ -194,5 +230,15 @@ span.number {
 	.content {
 		width: 100%;
 		height: calc(100vh - 80px);
+	}
+
+	// project
+	.project {
+		width: 100%;
+		height: auto;
+
+		.row {
+			height: auto;
+		}
 	}
 }
