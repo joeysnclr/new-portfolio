@@ -85,9 +85,10 @@ span.number {
 
 .navigation-section {
   height: 100vh;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.navigation-section .nav-container {
+  height: 100%;
 }
 
 .navigation-menu a {
@@ -144,11 +145,19 @@ span.number {
     width: 100%;
   }
   .navigation-mobile {
-    display: block;
     height: 80px;
   }
   .navigation-section {
     display: none;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+  }
+  .navigation-section .nav-container {
+    height: 100%;
   }
   .content {
     width: 100%;
