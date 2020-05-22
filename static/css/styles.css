@@ -149,11 +149,6 @@ span.number {
   }
   .navigation-section {
     display: none;
-    width: 100%;
-    height: calc(100vh - 80px);
-    position: absolute;
-    top: 80px;
-    left: 0;
   }
   .content {
     width: 100%;
