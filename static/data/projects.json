@@ -41,7 +41,7 @@
 		{
 			"id": "baseball-sim",
 			"name": "Baseball Simulator",
-			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem veniam ab incidunt a. Officia mollitia nulla ab ut velit quaerat ad laborum quo beatae ipsum!",
+			"desc": "Nine inning baseball game simulator complete with real stats from MLB.com.",
 			"link": null,
 			"github": "https://github.com/joeysnclr/expense-tracker",
 			"stack": [
