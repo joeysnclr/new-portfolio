@@ -1,6 +1,5 @@
 function toggleMobileNav() {
     if (screen.width <= 991) {
-        console.log("toggling")
         $(".navigation-section").toggle();
     }
 }

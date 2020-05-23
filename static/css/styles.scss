@@ -99,6 +99,7 @@ span.number {
 
 .navigation-mobile {
 	display: none;
+	border-bottom: 1px solid $bg-darkest;
 }
 
 .navigation-section {
@@ -194,12 +195,22 @@ span.number {
 	}
 }
 
+.other-projects-table {
+	td {
+		border-top: 1px solid $bg-dark;
+		border-bottom: 1px solid $bg-dark;
+	}
+}
 
 
 // RESPONSIVE
 @media only screen and (max-width: 991px) {
 	.main {
 		flex-direction: column;
+	}
+
+	.hide-mobile {
+		display: none;
 	}
 
 

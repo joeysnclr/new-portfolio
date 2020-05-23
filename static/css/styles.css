@@ -81,6 +81,7 @@ span.number {
 
 .navigation-mobile {
   display: none;
+  border-bottom: 1px solid #13161a;
 }
 
 .navigation-section {
@@ -160,12 +161,20 @@ span.number {
      object-fit: contain;
 }
 
+.other-projects-table td {
+  border-top: 1px solid #24292E;
+  border-bottom: 1px solid #24292E;
+}
+
 @media only screen and (max-width: 991px) {
   .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .hide-mobile {
+    display: none;
   }
   .navigation {
     width: 100%;

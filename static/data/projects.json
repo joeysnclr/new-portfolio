@@ -1,37 +1,54 @@
-[{
-		"id": "compound-invest",
-		"name": "Compound Invest",
-		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem veniam ab incidunt a. Officia mollitia nulla ab ut velit quaerat ad laborum quo beatae ipsum!",
-		"link": "https://compound-invest.herokuapp.com/",
-		"github": "https://github.com/joeysnclr/Compound-Invest",
-		"stack": ["Python", "Flask", "Chart.js"],
-		"tag": "Web Application"
-	},
-	{
-		"id": "expense-tracker",
-		"name": "Expense Tracker",
-		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem veniam ab incidunt a. Officia mollitia nulla ab ut velit quaerat ad laborum quo beatae ipsum!",
-		"link": "https://gentle-sea-83480.herokuapp.com/",
-		"github": "https://github.com/joeysnclr/expense-tracker",
-		"stack": [
-			"Python",
-			"Flask",
-			"MongoDB",
-			"Bootstrap",
-			"Chart.js"
-		],
-		"tag": "Web Application"
-	},
-	{
-		"id": "baseball-sim",
-		"name": "Baseball Simulator",
-		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem veniam ab incidunt a. Officia mollitia nulla ab ut velit quaerat ad laborum quo beatae ipsum!",
-		"link": null,
-		"github": "https://github.com/joeysnclr/expense-tracker",
-		"stack": [
-			"Python",
-			"MLB-Stats API"
-		],
-		"tag": "Program"
-	}
-]
+{
+	"other": [{
+			"name": "Pokemon Text",
+			"link": null,
+			"github": "https://github.com/joeysnclr/pokemonText",
+			"stack": ["Python"],
+			"tag": "Program"
+		},
+		{
+			"name": "Apple Aerial",
+			"link": null,
+			"github": "https://github.com/joeysnclr/appleAerial",
+			"stack": ["Python"],
+			"tag": "Desktop Application"
+		}
+	],
+	"main": [{
+			"id": "compound-invest",
+			"name": "Compound Invest",
+			"desc": "Web application displaying in depth analysis and graphs for compound interest investments.",
+			"link": "https://compound-invest.herokuapp.com/",
+			"github": "https://github.com/joeysnclr/Compound-Invest",
+			"stack": ["Python", "Flask", "Chart.js"],
+			"tag": "Web Application"
+		},
+		{
+			"id": "expense-tracker",
+			"name": "Expense Tracker",
+			"desc": "Visual interface for analyzing and managing personal expenses.",
+			"link": "https://gentle-sea-83480.herokuapp.com/",
+			"github": "https://github.com/joeysnclr/expense-tracker",
+			"stack": [
+				"Python",
+				"Flask",
+				"MongoDB",
+				"Bootstrap",
+				"Chart.js"
+			],
+			"tag": "Web Application"
+		},
+		{
+			"id": "baseball-sim",
+			"name": "Baseball Simulator",
+			"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem veniam ab incidunt a. Officia mollitia nulla ab ut velit quaerat ad laborum quo beatae ipsum!",
+			"link": null,
+			"github": "https://github.com/joeysnclr/expense-tracker",
+			"stack": [
+				"Python",
+				"MLB-Stats API"
+			],
+			"tag": "Program"
+		}
+	]
+}

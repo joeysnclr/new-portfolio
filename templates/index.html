@@ -10,7 +10,7 @@
 		<div class="navigation-section bg-darker py-0 py-lg-5">
 			<div class="nav-container d-flex flex-column justify-content-between">
 				<div class="navigation-menu">
-					<a href="#title" class="name pb-4">Joseph Sinclair</a>
+					<a href="#title" class="name pt-3 pt-md-0 pb-4">Joseph Sinclair</a>
 					<a href="#about"><span class="number font-secondary">01.</span> About</a>
 					<a href="#projects"><span class="number font-secondary">02.</span> Work</a>
 					<a href="#contact"><span class="number font-secondary">03.</span> Contact</a>
@@ -49,33 +49,30 @@
 			<div id="about" class="section px-4 px-md-5">
 				<h2><span class="number font-secondary">01. </span>About</h2>
 				<div class="py-3">
-					<h3 class="">Introduction</h3>
-					<p class="font-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
-						saepe! Quibusdam aliquid
-						blanditiis perferendis atque autem suscipit, nihil tempore minima illo rem officia aliquam
-						recusandae neque quaerat. Aliquid, expedita voluptate.</p>
+					<h3 class="mb-1">Who Am I?</h3>
+					<p class="font-secondary">Hello, my name is Joseph Sinclair and I have been developing web
+						applications as a hobby for just about 2 years now.</p>
 				</div>
 				<div class="py-3">
-					<h3 class="">Skills</h3>
+					<!-- <h3 class="mb-1">Skills</h3> -->
 					<div class="row no-gutters">
-						<div class="col-12 col-md-4 font-secondary">
+						<div class="col-12 col-md-4 mb-3 mb-md-0 font-secondary">
 							<h6>Programming Languages</h6>
-							<p>Python</p>
-							<p>Java</p>
-							<p>JavaScript</p>
+							<p class="small">Python</p>
+							<p class="small">Java</p>
+							<p class="small">JavaScript</p>
 						</div>
-						<div class="col-12 col-md-4 font-secondary">
+						<div class="col-12 col-md-4 mb-3 mb-md-0 font-secondary">
 							<h6>Libraries & Frameworks</h6>
-							<p>Flask</p>
-							<p>Bootstrap</p>
-							<p>JavaScript</p>
+							<p class="small">Flask</p>
+							<p class="small">Bootstrap</p>
+							<p class="small">React</p>
 						</div>
-						<div class="col-12 col-md-4 font-secondary">
+						<div class="col-12 col-md-4 mb-3 mb-md-0 font-secondary">
 							<h6>Development Tools</h6>
-							<p>SASS</p>
-							<p>Git/GitHub</p>
-							<p>Heroku</p>
-							<p>Adobe XD</p>
+							<p class="small">Sass</p>
+							<p class="small">Git/GitHub</p>
+							<p class="small">Heroku</p>
 						</div>
 					</div>
 				</div>
@@ -84,7 +81,7 @@
 				<h2><span class="number font-secondary">02. </span>Work</h2>
 				<p class="font-secondary">Projects that display my skills as a software engineer.</p>
 				<div class="projects">
-					{% for p in projects %}
+					{% for p in projects.main %}
 					<div class="project col-12 px-0 my-5 bg-darker">
 						<div class="row no-gutters d-flex">
 							<div class="project-info col-12 col-md-6  px-4 px-md-5 py-4 order-1 order-md-0">
@@ -117,12 +114,41 @@
 						</div>
 					</div>
 					{% endfor %}
+
+					<div class="project col-12 px-0 mt-2 mb-5 px-4 px-md-5 py-4 bg-darker">
+						<div class="row no-gutters d-flex">
+							<p class="text-primary font-secondary mb-2">Other notable projects</p>
+							<table class="other-projects-table table text-white font-secondary">
+								<tbody>
+									{% for p in projects.other %}
+									<tr>
+										<td>{{p.name}}</td>
+										<td class="hide-mobile">{{p.tag}}</td>
+										<td class="hide-mobile">
+											{% for tech in p.stack %}
+											<span>{{tech}} </span>
+											{% endfor %}
+										</td>
+										<td>
+											<a class="mr-3" target="_blank" href="{{p.github}}"><i
+													class="fab fa-github"></i></a>
+											{% if p.link %}
+											<a class="mr-3" target="_blank" href="{{p.link}}"><i
+													class="fas fa-eye"></i></a>
+											{% endif %}
+										</td>
+									</tr>
+									{% endfor %}
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="contact" class="section px-4 px-md-5">
 				<h2><span class="number font-secondary">03. </span>Contact</h2>
 				<div class="py-3">
-					<h3 class="">Get In Touch!</h3>
+					<h3 class="mb-1">Get In Touch!</h3>
 					<p class="font-secondary">I am always open to working on new projects and meeting new people in the
 						industry! You can reach me on LinkedIn or through my email.</p>
 					<div class="d-flex flex-column flex-md-row mt-2">
