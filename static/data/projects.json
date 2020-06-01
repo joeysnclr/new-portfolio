@@ -43,7 +43,7 @@
 			"name": "Baseball Simulator",
 			"desc": "Nine inning baseball game simulator complete with real stats from MLB.com.",
 			"link": null,
-			"github": "https://github.com/joeysnclr/expense-tracker",
+			"github": "https://github.com/joeysnclr/baseball-simulation",
 			"stack": [
 				"Python",
 				"MLB-Stats API"
