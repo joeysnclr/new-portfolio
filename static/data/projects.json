@@ -19,6 +19,15 @@
     ],
     "main": [
         {
+            "id": "url-short",
+            "name": "URL Shortener",
+            "desc": "Full stack web application that acts as a URL Shortener service.",
+            "link": "https://boiling-shelf-32273.herokuapp.com/",
+            "github": "https://github.com/joeysnclr/url-short",
+            "stack": ["JavaScript", "Express", "React", "MongoDB"],
+            "tag": "Web Application"
+        },
+        {
             "id": "compound-invest",
             "name": "Compound Invest",
             "desc": "Web application displaying in depth analysis and graphs for compound interest investments.",
@@ -34,15 +43,6 @@
             "link": "https://gentle-sea-83480.herokuapp.com/",
             "github": "https://github.com/joeysnclr/expense-tracker",
             "stack": ["Python", "Flask", "MongoDB", "Bootstrap"],
-            "tag": "Web Application"
-        },
-        {
-            "id": "url-short",
-            "name": "URL Shortener",
-            "desc": "Full stack web application that acts as a URL Shortener service.",
-            "link": "https://boiling-shelf-32273.herokuapp.com/",
-            "github": "https://github.com/joeysnclr/url-short",
-            "stack": ["JavaScript", "Express", "React", "MongoDB"],
             "tag": "Web Application"
         }
     ]
