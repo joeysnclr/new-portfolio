@@ -15,7 +15,17 @@
             "github": "https://github.com/joeysnclr/baseball-simulation",
             "stack": ["Python", "MLB-Stats API"],
             "tag": "Program"
+        },
+        {
+            "id": "expense-tracker",
+            "name": "Expense Tracker",
+            "desc": "Visual interface for analyzing and managing personal expenses.",
+            "link": "https://gentle-sea-83480.herokuapp.com/",
+            "github": "https://github.com/joeysnclr/expense-tracker",
+            "stack": ["Python", "Flask", "MongoDB", "Bootstrap"],
+            "tag": "Web Application"
         }
+
     ],
     "main": [
         {
@@ -34,15 +44,6 @@
             "link": "https://compound-invest.herokuapp.com/",
             "github": "https://github.com/joeysnclr/Compound-Invest",
             "stack": ["Python", "Flask", "Chart.js"],
-            "tag": "Web Application"
-        },
-        {
-            "id": "expense-tracker",
-            "name": "Expense Tracker",
-            "desc": "Visual interface for analyzing and managing personal expenses.",
-            "link": "https://gentle-sea-83480.herokuapp.com/",
-            "github": "https://github.com/joeysnclr/expense-tracker",
-            "stack": ["Python", "Flask", "MongoDB", "Bootstrap"],
             "tag": "Web Application"
         }
     ]
